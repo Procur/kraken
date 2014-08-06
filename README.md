@@ -1,5 +1,5 @@
 # Kraken
-*This is a fork from the original Kraken repo, which is a lightweight CSS framework ([see more here](http://cferdinandi.github.com/kraken/))
+This is a fork from the original Kraken repo, which is a lightweight CSS framework ([see more here](http://cferdinandi.github.com/kraken/))
 
 ## Changelog
 

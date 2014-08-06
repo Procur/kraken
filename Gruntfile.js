@@ -10,7 +10,8 @@ function gruntConfig(grunt) {
     srcPath: './src/sass',
     distPath: './dist/css',
 
-    sass: require('./Grunt/sass')
+    sass: require('./Grunt/sass'),
+    watch: require('./Grunt/watch')
   });
 
   for(var task in pkg.devDependencies) {
@@ -19,6 +20,7 @@ function gruntConfig(grunt) {
     }
   }
 
-  grunt.registerTask('default', ['sass:dist', 'sass:distMin']);
+  grunt.registerTask('build:assets', ['sass:dist', 'sass:distMin']);
+  grunt.registerTask('default', ['build:assets']);
 
 }

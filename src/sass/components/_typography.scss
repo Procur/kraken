@@ -2,10 +2,15 @@
  * @section Typography
  * Sets font styles for entire site
  */
+$web-fonts-protocol: "https";
+@include web-fonts(('Open Sans': ('300', '400', '600', '700', '800')));
+@include web-fonts(('Montserrat': ('400', '700')));
+@include web-fonts(('Roboto': ('100', '300', '400', '500', '700', '900')));
 
 body {
 	font-family: $font-primary;
 	font-size: $font-base;
+	font-weight: 300;
 	line-height: 1.5;
 	color: $color-black;
 	background: $color-white;
@@ -45,7 +50,7 @@ p {
  */
 
 .text-muted {
-	color: $color-gray-dark;
+	color: $color-gray-light;
 }
 
 
@@ -135,6 +140,7 @@ dt {
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
+	font-family: $font-heading;
 	font-weight: normal;
 	margin-bottom: 1em;
 	padding-top: 1em;

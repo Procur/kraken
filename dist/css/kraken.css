@@ -8,6 +8,9 @@
  * Mobile screen resizing
  * @link http://dev.w3.org/csswg/css-device-adapt/
  */
+@import url("https://fonts.googleapis.com/css?family=Open Sans%3A300%2C400%2C600%2C700%2C800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700");
+@import url("https://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900");
 @-webkit-viewport {
   width: device-width;
   zoom: 1.0;
@@ -47,7 +50,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -291,10 +294,11 @@ a:active {
  * Sets font styles for entire site
  */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 100%;
+  font-weight: 300;
   line-height: 1.5;
-  color: #272727;
+  color: black;
   background: white;
 }
 @media (min-width: 40em) {
@@ -328,7 +332,7 @@ p {
  * Alternate text colors
  */
 .text-muted {
-  color: gray;
+  color: #e6e7e8;
 }
 
 /**
@@ -336,7 +340,7 @@ p {
  */
 a,
 a:visited {
-  color: #0088cc;
+  color: #feac00;
   text-decoration: none;
   word-wrap: break-word;
 }
@@ -344,7 +348,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-  color: #005580;
+  color: #b27800;
   text-decoration: underline;
 }
 
@@ -412,6 +416,7 @@ dt {
  */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   margin-bottom: 1em;
   padding-top: 1em;
@@ -456,7 +461,7 @@ h4,
 hr {
   margin: 2em auto;
   border: 0;
-  border-top: 0.0725em solid #e5e5e5;
+  border-top: 0.0725em solid #e6e7e8;
   border-bottom: 0 solid white;
 }
 
@@ -491,19 +496,19 @@ sub {
  */
 ::selection {
   color: white;
-  background: #0088cc;
+  background: #feac00;
 }
 
 ::-moz-selection {
   color: white;
-  background: #0088cc;
+  background: #feac00;
 }
 
 /**
  * Blockquotes
  */
 blockquote {
-  border-left: 0.25em solid #e5e5e5;
+  border-left: 0.25em solid #e6e7e8;
   margin-bottom: 1.5625em;
   padding-left: 1.5625em;
   padding-right: 1.5625em;
@@ -534,7 +539,7 @@ pre {
 
 code {
   color: #dd1144;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   padding: 0.25em;
 }
 
@@ -542,7 +547,7 @@ pre {
   display: block;
   margin-bottom: 1.5625em;
   line-height: 1.5;
-  background-color: #f4f4f4;
+  background-color: #f6f6f7;
   padding: 0.8125em;
   tab-size: 4;
   white-space: pre-wrap;
@@ -557,18 +562,15 @@ pre code {
   border: 0;
 }
 
-/**
- * @section Buttons
- * Styling for CSS buttons.
- */
+d
 .btn {
   display: inline-block;
   font-size: 0.9375em;
   padding: 0.5em 0.6875em;
   line-height: 1.2;
   font-weight: normal;
-  background-color: #0088cc;
-  border: 0.0725em solid #0088cc;
+  background-color: #feac00;
+  border: 0.0725em solid #feac00;
   border-radius: 0.0725em;
   margin-right: 0.3125em;
   margin-bottom: 0.3125em;
@@ -594,14 +596,14 @@ a .btn:focus,
 .btn:active,
 a .btn:active,
 .btn.active {
-  background-color: #005580;
-  border-color: #005580;
+  background-color: #b27800;
+  border-color: #b27800;
   text-decoration: none;
 }
 
 .btn-secondary {
-  background-color: gray;
-  border-color: gray;
+  background-color: #231f20;
+  border-color: #231f20;
 }
 
 .btn-secondary:hover,
@@ -611,8 +613,8 @@ a .btn-secondary:focus,
 .btn-secondary:active,
 a .btn-secondary:active,
 .btn-secondary.active {
-  background-color: #5a5a5a;
-  border-color: #5a5a5a;
+  background-color: black;
+  border-color: black;
 }
 
 .btn:active,
@@ -689,10 +691,10 @@ select {
   width: 100%;
   font: inherit;
   line-height: 1.5;
-  color: #555555;
+  color: #2e2e2e;
   margin-bottom: 1.1875em;
   padding: 0.3125em;
-  border: 0.0725em solid #b8b8b8;
+  border: 0.0725em solid #5f5456;
   border-radius: 0.0725em;
 }
 @media (min-width: 40em) {

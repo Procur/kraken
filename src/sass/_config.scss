@@ -4,20 +4,24 @@
 //
 //
 // Colors
-// Primary (Blue): #0088cc
-// Black: #272727
+// Orange (900): #FF740D
+// Orange (700): #E7890C
+// Orange (500): #feac00
+// Orange (300): #E7B60C
+// Green (900): #8ED357;
+// Green (700): #68DD5C;
+// Green (500): #5cc672;
+// Green (300): #5CDD9B;
+// Gray (900) #231f20
+// Gray (700): #5c5c5c
+// Gray (500): #7f7f7f
+// Gray (300): #e6e7e8
 // White: #ffffff
-// Success (Green): #377f31;
-// Danger (Red): #880e14;
-// Warning (Yellow): #dba909;
 // Code (Fuscia): #dd1144;
-// Gray (Dark): #808080
-// Gray (Light): #e5e5e5
 //
 //
 // Font Stack
-// Sans-Serif (default): "Helvetica Neue", Arial, sans-serif
-// Serif (suggested): Georgia, Times, serif
+// Sans-Serif: "Open Sans", "Roboto", "Montserrat", sans-serif
 // Monospace: Menlo, Monaco, "Courier New", monospace
 //
 //
@@ -28,22 +32,31 @@
 //
 
 // Colors
-$color-primary: #0088cc;
-$color-black: #272727;
+$color-orange-dark: #CB8900;
+$color-orange-primary: #feac00;
+$color-orange-light: #FEC54C;
+$color-green-primary: #5cc672;
+$color-green-alt-light: #A1D2AB;
+$color-green-alt-dark: #449355;
+$color-red-primary: #880e14;
+$color-gray-dark: #231f20;
+$color-gray-primary: #5c5c5c;
+// $color-gray-primary: #7f7f7f;
+$color-gray-light: #e6e7e8;
 $color-white: #ffffff;
+$color-black: #000000;
 
-$color-success: #377f31; // Green
-$color-danger: #880e14; // Red
-$color-warning: #dba909; // Yellow
+$color-primary: $color-orange-primary;
+$color-success: $color-green-primary;
+$color-danger: $color-red-primary;
+$color-warning: $color-gray-primary;
 $color-code: #dd1144;
-
-$color-gray-dark: #808080;
-$color-gray-light: #e5e5e5;
 
 
 // Font Stacks
-$font-primary: "Helvetica Neue", Arial, sans-serif;
-$font-secondary: Georgia, Times, serif;
+$font-heading: "Open Sans", sans-serif;
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
 $font-monospace: Menlo, Monaco, "Courier New", monospace;
 
 
