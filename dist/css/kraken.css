@@ -332,7 +332,7 @@ p {
  * Alternate text colors
  */
 .text-muted {
-  color: #e6e7e8;
+  color: #7f7f7f;
 }
 
 /**
@@ -348,7 +348,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-  color: #b27800;
+  color: #cb8900;
   text-decoration: underline;
 }
 
@@ -405,9 +405,20 @@ dt {
  * Removes list styling.
  * For semantic reasons, should only be used on unordered lists.
  */
-.list-unstyled {
+ul.list-unstyled {
   margin-left: 0;
   list-style: none;
+}
+
+/**
+ * Add separator between list items
+ */
+ul.list-separated > li, ol.list-separated > li {
+  padding: 15px 0;
+  border-bottom: 1px dotted #e6e7e8;
+}
+ul.list-separated > li:first-child, ol.list-separated > li:first-child {
+  border-top: 1px dotted #e6e7e8;
 }
 
 /**
@@ -421,6 +432,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
   padding-top: 1em;
   word-wrap: break-word;
+  letter-spacing: .06em;
 }
 
 h1,
@@ -456,12 +468,47 @@ h4,
   }
 }
 /**
+ * Column heading
+ */
+h1.heading-column,
+h2.heading-column,
+h3.heading-column,
+h4.heading-column,
+h5.heading-column,
+h6.heading-column {
+  border-bottom: 3px solid #e6e7e8;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-family: 'Montserrat';
+  color: #231f20;
+}
+
+/**
+ * Card heading
+ */
+h1.heading-card,
+h2.heading-card,
+h3.heading-card,
+h4.heading-card,
+h5.heading-card,
+h6.heading-card {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: white;
+  background-color: #231f20;
+  padding: 15px;
+  width: 100%;
+}
+
+/**
  * Lines, Quotes and Emphasis
  */
 hr {
   margin: 2em auto;
   border: 0;
-  border-top: 0.0725em solid #e6e7e8;
+  border-top: 0.0725em solid #7f7f7f;
   border-bottom: 0 solid white;
 }
 
@@ -495,20 +542,20 @@ sub {
  * Highlighting colors
  */
 ::selection {
-  color: white;
-  background: #feac00;
+  color: black;
+  background: #e6e7e8;
 }
 
 ::-moz-selection {
-  color: white;
-  background: #feac00;
+  color: black;
+  background: #e6e7e8;
 }
 
 /**
  * Blockquotes
  */
 blockquote {
-  border-left: 0.25em solid #e6e7e8;
+  border-left: 0.25em solid #7f7f7f;
   margin-bottom: 1.5625em;
   padding-left: 1.5625em;
   padding-right: 1.5625em;
@@ -539,7 +586,7 @@ pre {
 
 code {
   color: #dd1144;
-  background-color: #f9f9f9;
+  background-color: #919191;
   padding: 0.25em;
 }
 
@@ -547,7 +594,7 @@ pre {
   display: block;
   margin-bottom: 1.5625em;
   line-height: 1.5;
-  background-color: #f6f6f7;
+  background-color: #8e8e8e;
   padding: 0.8125em;
   tab-size: 4;
   white-space: pre-wrap;
@@ -562,7 +609,10 @@ pre code {
   border: 0;
 }
 
-d
+/**
+ * @section Buttons
+ * Styling for CSS buttons.
+ */
 .btn {
   display: inline-block;
   font-size: 0.9375em;
