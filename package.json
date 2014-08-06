@@ -1,0 +1,18 @@
+{
+  "name": "Kraken",
+  "version": "3.7.0",
+  "description": "A lightweight front-end boilerplate",
+  "author": {
+    "name": "Chris Ferdinandi",
+    "url": "http://gomakethings.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cferdinandi/kraken"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.3"
+  }
+}
