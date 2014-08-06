@@ -1,15 +1,14 @@
 {
   "name": "Kraken",
-  "version": "3.7.0",
-  "description": "A lightweight front-end boilerplate",
+  "version": "0.1",
+  "description": "A lightweight front-end boilerplate for Procur",
   "author": {
-    "name": "Chris Ferdinandi",
-    "url": "http://gomakethings.com"
+    "name": "Team Angler"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/cferdinandi/kraken"
+    "url": "https://github.com/Procur/Kraken"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
