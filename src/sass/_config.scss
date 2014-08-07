@@ -3,23 +3,6 @@
 // Adjust colors, font stacks, breakpoints and sizing.
 //
 //
-// Colors
-// Orange (900): #FF740D
-// Orange (700): #E7890C
-// Orange (500): #feac00
-// Orange (300): #E7B60C
-// Green (900): #8ED357;
-// Green (700): #68DD5C;
-// Green (500): #5cc672;
-// Green (300): #5CDD9B;
-// Gray (900) #231f20
-// Gray (700): #5c5c5c
-// Gray (500): #7f7f7f
-// Gray (300): #e6e7e8
-// White: #ffffff
-// Code (Fuscia): #dd1144;
-//
-//
 // Font Stack
 // Sans-Serif: "Open Sans", "Roboto", "Montserrat", sans-serif
 // Monospace: Menlo, Monaco, "Courier New", monospace
@@ -38,7 +21,7 @@ $color-orange-light: #FEC54C;
 $color-green-primary: #5cc672;
 $color-green-alt-light: #A1D2AB;
 $color-green-alt-dark: #449355;
-$color-red-primary: #880e14;
+$color-red-primary: #D4161F;
 $color-gray-dark: #231f20;
 $color-gray-primary: #5c5c5c;
 $color-gray-light: #7f7f7f;
@@ -49,7 +32,7 @@ $color-black: #000000;
 $color-primary: $color-orange-primary;
 $color-success: $color-green-primary;
 $color-danger: $color-red-primary;
-$color-warning: $color-gray-primary;
+$color-info: $color-gray-primary;
 $color-code: #dd1144;
 
 
