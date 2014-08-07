@@ -11,9 +11,17 @@ fieldset {
 legend,
 label {
 	display: block;
-	font-weight: normal;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .06em;
 	padding: 0;
 	margin-bottom: calc-em(5px);
+}
+
+label.error-msg {
+	color: $color-danger;
+	margin-top: calc-em(-17px);
+	font-size: calc-em(12px)
 }
 
 input,
@@ -34,6 +42,13 @@ select {
 	}
 }
 
+input {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	padding: calc-em(6px) 0;
+}
+
 form button,
 form .button {
 	margin-bottom: calc-em(19px);
@@ -52,14 +67,34 @@ input[type="radio"] {
 	padding: 0;
 	margin-bottom: calc-em(5px);
 	cursor: pointer;
+	background: $color-white;
+}
+
+input[type="image"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+	border: none;
+	box-shadow: none;
 }
 
 input:focus,
 textarea:focus {
-	border-color: rgba(82, 168, 236, 0.8);
-	box-shadow: inset 0 calc-em(1px) calc-em(1px) rgba(0, 0, 0, 0.075), 0 0 calc-em(8px) rgba(82, 168, 236, 0.6);
+	border-bottom-color: $color-success;
+	box-shadow: 0 calc-em(1px) 0 $color-success;
 	outline: 0;
-	outline: thin dotted \9;
+	outline: thin dotted 9;
+}
+
+input.has-error, input.has-error:focus {
+	border-bottom-color: $color-danger;
+	box-shadow: 0 calc-em(1px) 0 $color-danger;
+}
+
+input[disabled], input.disabled {
+	border-bottom: calc-em(1px) dotted $color-gray-light;
+	cursor: not-allowed;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
 input[type="file"]:focus,
