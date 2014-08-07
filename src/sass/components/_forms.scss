@@ -21,7 +21,12 @@ label {
 label.error-msg {
 	color: $color-danger;
 	margin-top: calc-em(-17px);
-	font-size: calc-em(12px)
+	margin-bottom: calc-em(19px);
+	font-size: calc-em(12px);
+}
+
+label.error-msg > i {
+	float: right;
 }
 
 input,
@@ -34,9 +39,9 @@ select {
 	color: lighten( $color-black, 18% );
 	margin-bottom: calc-em(19px);
 	padding: calc-em(5px);
-	border: calc-em(1px) solid lighten( $color-gray-dark, 22% );
+	border: 1px solid lighten( $color-gray-primary, 22% );
 	border-radius: calc-em(1px);
-
+	padding: calc-em(6px) 0;
 	@media (min-width: $bp-medium) {
 		line-height: 1.5625;
 	}
@@ -46,16 +51,29 @@ input {
 	border-top: none;
 	border-right: none;
 	border-left: none;
-	padding: calc-em(6px) 0;
+}
+
+select {
+	padding-left: calc-em(6px);
+	padding-right: calc-em(6px);
+	border-radius: calc-em(1px);
+	background: url('../img/ddarrow.png') no-repeat white;
+	background-position: right center;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+textarea {
+	padding-left: calc-em(6px);
+	padding-right: calc-em(6px);
+	border-radius: calc-em(1px);
+	height: calc-em(114px);
 }
 
 form button,
 form .button {
 	margin-bottom: calc-em(19px);
-}
-
-textarea {
-	height: 12em;
 }
 
 input[type="image"],
@@ -77,12 +95,20 @@ input[type="radio"]:focus {
 	box-shadow: none;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
 	border-bottom-color: $color-success;
 	box-shadow: 0 calc-em(1px) 0 $color-success;
 	outline: 0;
-	outline: thin dotted 9;
+}
+
+textarea:focus,
+select:focus {
+	border-color: $color-success;
+	box-shadow: 0 calc-em(1px) calc-em(.25px) $color-success,
+							calc-em(1px) 0 calc-em(.25px) $color-success,
+							0 calc-em(-1px) calc-em(.25px) $color-success,
+							calc-em(-1px) 0 calc-em(.25px) $color-success;
+	outline: 0;
 }
 
 input.has-error, input.has-error:focus {
@@ -90,19 +116,39 @@ input.has-error, input.has-error:focus {
 	box-shadow: 0 calc-em(1px) 0 $color-danger;
 }
 
-input[disabled], input.disabled {
-	border-bottom: calc-em(1px) dotted $color-gray-light;
+select.has-error,
+textarea.has-error {
+	border-color: $color-danger;
+	box-shadow: 0 calc-em(1px) calc-em(.25px) $color-danger,
+							calc-em(1px) 0 calc-em(.25px) $color-danger,
+							0 calc-em(-1px) calc-em(.25px) $color-danger,
+							calc-em(-1px) 0 calc-em(.25px) $color-danger;
+}
+
+input[disabled],
+input.disabled,
+select[disabled],
+select.disabled,
+textarea[disabled],
+textarea.disabled {
+	border-color: $color-gray-light;
+	border-style: dotted;
 	cursor: not-allowed;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
 
+input[disabled],
+input.disabled {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+
 input[type="file"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
-	outline: thin dotted;
-	outline: calc-em(5px) auto -webkit-focus-ring-color;
-	outline-offset: calc-em(-2px);
+	outline: 0;
 }
 
 
@@ -120,6 +166,6 @@ select:focus {
  * Condensed inputs
  */
 .input-condensed {
-	padding: calc-em(1px) calc-em(5px);
-	font-size: calc-em(15px);
+	padding: calc-em(3px) 0;
+	font-size: calc-em(12px);
 }

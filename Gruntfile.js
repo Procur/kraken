@@ -11,7 +11,8 @@ function gruntConfig(grunt) {
     distPath: './dist/css',
 
     sass: require('./Grunt/sass'),
-    watch: require('./Grunt/watch')
+    watch: require('./Grunt/watch'),
+    copy: require('./Grunt/copy')
   });
 
   for(var task in pkg.devDependencies) {
@@ -20,7 +21,7 @@ function gruntConfig(grunt) {
     }
   }
 
-  grunt.registerTask('build:assets', ['sass:dist', 'sass:distMin']);
+  grunt.registerTask('build:assets', ['sass:dist', 'sass:distMin', 'copy:fonts', 'copy:img']);
   grunt.registerTask('default', ['build:assets']);
 
 }

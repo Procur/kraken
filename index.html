@@ -388,11 +388,17 @@
 			<form>
 				<label>Label</label>
 				<input type="text" placeholder="Hint text">
+
 				<label>Error</label>
 				<input type="text" class="has-error" value="Error text">
-				<label class="error-msg">Error message</label>
+				<label class="error-msg">
+					Error message
+					<i class="fa fa-exclamation-triangle"></i>
+				</label>
+
 				<label>Disabled</label>
 				<input type="text" disabled value="Input text">
+
 				<label>
 					<input type="checkbox">
 					Option 1
@@ -401,6 +407,7 @@
 					<input type="checkbox">
 					Option 2
 				</label>
+
 				<label>
 					<input type="radio" name="radioset">
 					Option 1
@@ -409,19 +416,46 @@
 					<input type="radio" name="radioset">
 					Option 2
 				</label>
+
 				<select>
 					<option>Select 1</option>
 					<option>Select 2</option>
 					<option>Select 3</option>
 				</select>
-				<textarea></textarea>
+
+				<select class="has-error">
+					<option>Select 1</option>
+					<option>Select 2</option>
+					<option>Select 3</option>
+				</select>
+				<label class="error-msg">
+					Error message
+					<i class="fa fa-exclamation-triangle"></i>
+				</label>
+
+				<select disabled>
+					<option>Select 1</option>
+					<option>Select 2</option>
+					<option>Select 3</option>
+				</select>
+
+				<label>Textarea</label>
+				<textarea placeholder="Hint text"></textarea>
+				<textarea class="has-error">Error text</textarea>
+				<label class="error-msg">
+					Error message
+					<i class="fa fa-exclamation-triangle"></i>
+				</label>
+				<textarea disabled>Input text</textarea>
+
+				<input class="button btn btn-success" type="submit"></input>
 			</form>
 
 			<h2>Inline &amp; Condensed</h2>
 
 			<form>
-				<input type="text" value=".input-inline" class="input-inline">
-				<input type="text" value=".input-condensed" class="input-condensed input-inline">
+				<input type="text" placeholder=".input-inline" class="input-inline">
+				<input type="text" placeholder=".input-condensed" class="input-condensed input-inline">
 			</form>
 
 			<hr>
