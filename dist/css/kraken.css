@@ -657,6 +657,12 @@ a .btn:active,
   text-decoration: none;
 }
 
+.btn:active,
+.btn.active {
+  box-shadow: 0 0.1875em 0.1875em rgba(0, 0, 0, 0.16), 0 0.1875em 0.1875em rgba(0, 0, 0, 0.23);
+  outline: 0;
+}
+
 .btn-secondary {
   background-color: #5cc672;
   border-color: #5cc672;
@@ -674,10 +680,61 @@ a .btn-secondary:active,
   border-color: #49bf62;
 }
 
-.btn:active,
-.btn.active {
-  box-shadow: 0 0.1875em 0.1875em rgba(0, 0, 0, 0.16), 0 0.1875em 0.1875em rgba(0, 0, 0, 0.23);
-  outline: 0;
+.btn-flat {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  color: #5c5c5c;
+}
+
+.btn-flat:hover,
+a .btn-flat:hover,
+.btn-flat:focus,
+a .btn-flat:focus,
+.btn-flat:active,
+a .btn-flat:active,
+.btn-flat.active {
+  background-color: #feac00;
+  border-color: #feac00;
+  color: white;
+}
+
+.btn-flat:active,
+.btn-flat.active {
+  box-shadow: none;
+  background-color: #e59b00;
+  border-color: #e59b00;
+}
+
+.btn-flat.btn-secondary:hover,
+a .btn-flat.btn-secondary:hover,
+.btn-flat.btn-secondary:focus,
+a .btn-flat.btn-secondary:focus,
+.btn-flat.btn-secondary:active,
+a .btn-flat.btn-secondary:active,
+.btn-flat.btn-secondary.active {
+  background-color: #5cc672;
+  border-color: #5cc672;
+  color: white;
+}
+
+.btn-flat.btn-secondary:active,
+.btn-flat.btn-secondary.active {
+  box-shadow: none;
+  background-color: #49bf62;
+  border-color: #49bf62;
+}
+
+.btn-floating-action {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.btn-floating-action.btn-large {
+  width: 3.5em;
+  height: 3.5em;
+  padding: 0;
 }
 
 .btn.disabled,

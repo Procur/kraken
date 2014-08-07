@@ -47,6 +47,12 @@ a .btn:active,
 	text-decoration: none;
 }
 
+.btn:active,
+.btn.active {
+	box-shadow: 0 calc-em(3px) calc-em(3px) rgba(0, 0, 0, .16), 0 calc-em(3px) calc-em(3px) rgba(0, 0, 0, .23);
+	outline: 0;
+}
+
 .btn-secondary {
 	background-color: $color-green-primary;
 	border-color: $color-green-primary;
@@ -64,10 +70,61 @@ a .btn-secondary:active,
 	border-color: darken($color-green-primary, 5%);
 }
 
-.btn:active,
-.btn.active {
-	box-shadow: 0 calc-em(3px) calc-em(3px) rgba(0, 0, 0, .16), 0 calc-em(3px) calc-em(3px) rgba(0, 0, 0, .23);
-	outline: 0;
+.btn-flat {
+	background-color: rgba(255, 255, 255, 0);
+	border-color: rgba(255, 255, 255, 0);
+	box-shadow: none;
+	color: $color-gray-primary;
+}
+
+.btn-flat:hover,
+a .btn-flat:hover,
+.btn-flat:focus,
+a .btn-flat:focus,
+.btn-flat:active,
+a .btn-flat:active,
+.btn-flat.active {
+	background-color: $color-primary;
+	border-color: $color-primary;
+	color: $color-white;
+}
+
+.btn-flat:active,
+.btn-flat.active {
+	box-shadow: none;
+	background-color: darken($color-primary, 5%);
+	border-color: darken($color-primary, 5%);
+}
+
+.btn-flat.btn-secondary:hover,
+a .btn-flat.btn-secondary:hover,
+.btn-flat.btn-secondary:focus,
+a .btn-flat.btn-secondary:focus,
+.btn-flat.btn-secondary:active,
+a .btn-flat.btn-secondary:active,
+.btn-flat.btn-secondary.active {
+	background-color: $color-green-primary;
+	border-color: $color-green-primary;
+	color: $color-white;
+}
+
+.btn-flat.btn-secondary:active,
+.btn-flat.btn-secondary.active {
+	box-shadow: none;
+	background-color: darken($color-green-primary, 5%);
+	border-color: darken($color-green-primary, 5%);
+}
+
+.btn-floating-action {
+	border-radius: 50%;
+	width: calc-em(40px);
+	height: calc-em(40px);
+}
+
+.btn-floating-action.btn-large {
+	width: calc-em(56px);
+	height: calc-em(56px);
+	padding: 0;
 }
 
 .btn.disabled,
@@ -76,7 +133,7 @@ a .btn-secondary:active,
 	cursor: not-allowed;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-large {
