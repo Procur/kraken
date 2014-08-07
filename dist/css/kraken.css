@@ -586,7 +586,7 @@ pre {
 
 code {
   color: #dd1144;
-  background-color: #919191;
+  background-color: #f9f9f9;
   padding: 0.25em;
 }
 
@@ -594,7 +594,7 @@ pre {
   display: block;
   margin-bottom: 1.5625em;
   line-height: 1.5;
-  background-color: #8e8e8e;
+  background-color: #f6f6f7;
   padding: 0.8125em;
   tab-size: 4;
   white-space: pre-wrap;
