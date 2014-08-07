@@ -335,6 +335,43 @@ p {
   color: #7f7f7f;
 }
 
+.text-primary {
+  color: #feac00;
+}
+
+.text-success {
+  color: #5cc672;
+}
+
+.text-info {
+  color: #5c5c5c;
+}
+
+.text-danger {
+  color: #d4161f;
+}
+
+/**
+ * Background styling
+ */
+.bg-primary {
+  background-color: #feac00;
+  color: white;
+}
+
+.bg-success {
+  background-color: #bae7c4;
+}
+
+.bg-info {
+  background-color: #9c9c9c;
+  color: white;
+}
+
+.bg-danger {
+  background-color: #f1787e;
+}
+
 /**
  * Hyperlink styling
  */

@@ -53,6 +53,44 @@ p {
 	color: $color-gray-light;
 }
 
+.text-primary {
+	color: $color-primary;
+}
+
+.text-success {
+	color: $color-success;
+}
+
+.text-info {
+	color: $color-info;
+}
+
+.text-danger {
+	color: $color-danger;
+}
+
+/**
+ * Background styling
+ */
+
+.bg-primary {
+	background-color: $color-primary;
+	color: $color-white;
+}
+
+.bg-success {
+	background-color: lighten($color-success, 25%);
+}
+
+.bg-info {
+	background-color: lighten($color-info, 25%);
+	color: $color-white;
+}
+
+.bg-danger {
+	background-color: lighten($color-danger, 25%);
+}
+
 
 /**
  * Hyperlink styling
