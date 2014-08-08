@@ -380,6 +380,12 @@
 				<button class="btn btn-flat btn-block btn-info">Button [flat]</button>
 			</p>
 
+			<h2>Close Icon</h2>
+			<p>
+				<button class="close">&times;</button>
+			</p>
+
+
 			<hr>
 
 		</section>
@@ -499,11 +505,63 @@
 
 		<section class="container">
 
-			<h1>Helpers</h1>
+			<h1>Overrides</h1>
+
+			<h2>Positioning</h2>
+
+			<div class="row">
+				<div class="pull-left bg-primary text-center" style="padding: 10px;">Pull left</div>
+				<div class="pull-right bg-primary text-center" style="padding: 10px;">Pull right</div>
+				<span class="center-block bg-primary text-center" style="padding: 10px; width: 120px;">Center block</span>
+			</div>
+
+			<h2>Visibility</h2>
+
+			<div class="row">
+				<button class="btn btn-flat btn-success" onclick="toggleDisplay()"><i class="fa fa-adjust"></i></button>
+				<div id="toggle-display" class="bg-primary text-center" style="padding: 10px;">Show/Hide</div>
+			</div>
+			<br/>
+			<div class="row">
+				<button class="btn btn-flat btn-success" onclick="toggleVisibility()"><i class="fa fa-adjust"></i></button>
+				<div id="toggle-visibility" class="bg-primary text-center" style="padding: 10px;">Visible/Invisible</div>
+			</div>
 
 			<hr>
 
 		</section>
+
+	<script>
+		function toggleDisplay() {
+			var
+				toggle = document.getElementById('toggle-display'),
+				classes = toggle.className;
+
+			if (classes.match(/hidden/g)) {
+				classes = classes.replace(/hidden/, 'show');
+			}
+			else {
+				classes = classes.replace(/show/) + ' hidden';
+			}
+
+			toggle.className = classes;
+		}
+
+		function toggleVisibility() {
+			var
+				toggle = document.getElementById('toggle-visibility'),
+				classes = toggle.className;
+
+			if (classes.match(/invisible/g)) {
+				classes = classes.replace(/invisible/, '');
+			}
+			else {
+				classes += ' invisible';
+			}
+
+			toggle.className = classes;
+		}
+	</script>
 
 	</body>
 </html>

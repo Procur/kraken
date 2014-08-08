@@ -24,17 +24,18 @@
  * Floats
  */
 
-.float-left {
+.pull-left {
 	float: left;
 }
 
-.float-center {
+.center-block {
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 
-.float-right {
+.pull-right {
 	float: right;
 }
 
@@ -86,8 +87,17 @@
  * @workaround
  * @affected IE 8/9/10
  */
-[hidden] {
-	display: none;
+[hidden],
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.show {
+	display: block !important;
+}
+
+.invisible {
 	visibility: hidden;
 }
 

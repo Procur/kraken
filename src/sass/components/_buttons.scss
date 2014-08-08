@@ -264,3 +264,17 @@ button,
 input.btn {
 	margin-right: 0;
 }
+
+button.close, .button.close {
+	background: transparent;
+	color: $color-gray-alt-light;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: calc-em(22px);
+	line-height: 1.2;
+
+	&:hover,
+	&:active {
+		color: $color-gray-light;
+	}
+}

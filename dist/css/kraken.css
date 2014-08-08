@@ -911,6 +911,18 @@ input.btn {
   margin-right: 0;
 }
 
+button.close, .button.close {
+  background: transparent;
+  color: #e6e7e8;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.375em;
+  line-height: 1.2;
+}
+button.close:hover, button.close:active, .button.close:hover, .button.close:active {
+  color: #7f7f7f;
+}
+
 /**
  * @section Forms
  * Styling for form elements.
@@ -3132,17 +3144,18 @@ select:focus {
 /**
  * Floats
  */
-.float-left {
+.pull-left {
   float: left;
 }
 
-.float-center {
+.center-block {
   float: none;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
-.float-right {
+.pull-right {
   float: right;
 }
 
@@ -3190,8 +3203,17 @@ select:focus {
  * @workaround
  * @affected IE 8/9/10
  */
-[hidden] {
-  display: none;
+[hidden],
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
   visibility: hidden;
 }
 
